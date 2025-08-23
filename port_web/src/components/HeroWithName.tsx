@@ -1,4 +1,3 @@
-
 import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -32,7 +31,12 @@ const HeroWithName = () => {
       </p>
       
       <div className="flex flex-col sm:flex-row gap-4 mb-12">
-        <a href= {Resume} target="_blank" rel="noopener noreferrer">
+        <a 
+          href={Resume} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          data-favicon="https://cdn-icons-png.flaticon.com/512/7867/7867852.png"
+        >
           <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300 group">
             View Resume
             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
